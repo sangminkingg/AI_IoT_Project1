@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: polyfont;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* 로그인 */
+
+
+
+
+.popup {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.popup h2{
+    width: 100%;
+    height: 50px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.popup form {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup fieldset {
+    text-align: right;
+    border: none;
+}
+
+.popup input {
+    z-index: 10;
+    background-color: rgba(0,0,0,0.07);
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 12px 0;
+}
+
+.popup ul {
+    display: inline-block;
+}
+
+.popup ul li:first-child {
+    color: #333;
+    font-size: 14px;
+    position: relative;
+}
+
+.popup li {
+    display: inline-block;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+
+.popup li:last-child {
+    border-left: 1px solid #333;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.popup a {
+    color: #333;
+    font-size: 14px;
+    position: relative;
+}
+
+.popup button {
+    display: block;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+    background-color: #043b0e;
+    border-radius: 5px;
+    height: 42px;
+    margin: 30px 0 auto;
+    border: none;
+}
+
+.popup:target {
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* 회원가입 */
+
+.popup2 {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    z-index: -2;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 630px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+
+.popup2 h2{
+    width: 100%;
+    height: 50px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.popup2 form {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup2 fieldset {
+    border: none;
+}
+
+.popup2 label {
+    font-size: 14px;
+}
+
+.input1 input{
+    z-index: 10;
+    background-color: rgba(0,0,0,0.05);
+    text-align: left;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 17px 0;
+}
+
+.input1 input:last-child {
+    margin-bottom: 20px;
+}
+
+.input2 input{
+    z-index: 10;
+    background-color: rgba(0,0,0,0.07);
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 5px 0 17px 0;
+}
+
+#input_text {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.input3 input{
+    z-index: 10;
+    background-color: rgba(0,0,0,0.05);
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+.input3 {
+    margin-bottom: 35px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+}
+
+.input3 div{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.gender1,
+.gender2 {
+    padding: 0 40px;
+}
+
+.popup2 button {
+    display: block;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    height: 42px;
+    margin: 8px 0 auto;
+    border: none;
+    background-color: #043b0e;
+}
+
+.popup2 button:last-child {
+    color: #043b0e;
+    border: 0.5px solid #043b0e;
+    background-color: white;
+}
+
+.popup2:target {
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+/* 약관동의 */
+
+.popup2_0 {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index: -2;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 680px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    
+}
+
+.terms__check__all{
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.popup2 span {
+    letter-spacing: -1px
+}
+
+.popup2_0 h2{
+    width: 100%;
+    height: 50px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.popup2_0 span {
+    font-size: 12px;
+    margin-left: 3px;
+    color: #666;
+}
+
+
+.popup2_0 form {
+    font-size: 14px;
+    letter-spacing: -0.8px;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup2_0 .terms__content {
+    font-size: 12px;
+    overflow: auto;
+    height: 140px;
+    border: 0.5px solid #333;
+    background-color:rgba(0,0,0,0.05);
+    margin: 5px 0 30px 0;
+    padding: 10px 24px 10px 10px;
+    line-height: 20px;
+    
+    letter-spacing: -1px;
+}
+
+
+.popup2_0 #btnnnn {
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    
+    letter-spacing: -1px;
+}
+
+.popup2_0 button {
+    width: 49.5%;
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    height: 42px;
+    border: none;
+    background-color: #043b0e;
+}
+
+.popup2_0 button:last-child {
+    color: #043b0e;
+    border: 0.5px solid #043b0e;
+    background-color: white;
+}
+
+.popup2_0:target {
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.search {
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-100%);
+    z-index: -2;
+    width: 400px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.search h2{
+    width: 100%;
+    margin: 5px 10px 7px 12px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.search fieldset {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+}
+
+.search input {
+    z-index: 10;
+    background-color: rgba(0,0,0,0.05);
+    text-align: left;
+    display: block;
+    width: 70%;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 7px ;
+    box-sizing: border-box;
+    margin: 5px 10px 0 10px;
+}
+
+.search button {
+    display: block;
+    font-size: 15px;
+    width: 80px;
+    color: white;
+    background-color: #043b0e;
+    border-radius: 8px;
+    height: 42px;
+    border: none;
+    margin-top: 5px;
+}
+
+.search:target {
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* 정보창 */
+
+.search_2 {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+    width: 400px;
+    height: 530px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0;
+}
+
+.search_2 h2{
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 30px;
+
+}
+
+.search_2 #autocareBtn {
+    width: 200px;
+    height: 42px;
+    border: none;
+    font-weight: 600;
+    background-color: #fff ;
+    font-size: 16px;
+    color: #305A05;
+    border-radius: 8px;
+    margin-top: 40px;
+    border: 1.5px solid #305A05;
+}
+
+#searchform {
+    margin: 30px 50px;
+}
+
+#autocareBtn:hover {
+    background-color: #305A05 ;
+    color: white;
+}
+
+.search_2:target {
+    z-index: 10;
+    opacity: 1;
+}
+
+.search_2 table {
+    width : 100%;
+    line-height: 50px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.search_2 #table_left {
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: -1.5px;
+}
+
+.search_2 #table_right {
+    color: #305A05;
+    font-size: 18px;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
