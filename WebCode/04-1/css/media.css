@@ -1,0 +1,160 @@
+@media screen and (max-width:1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        display: none;
+        align-items: center;
+        padding-top: 30px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar_menu .dep1 li{
+        margin-left: 0;
+    }
+
+    .navbar_menu li {
+        font-size: 20px;
+        padding:8px 0px 8px 0px;
+        margin:10px 0 0px 0 ;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .navbar_menu li:hover {
+        text-decoration: none;
+        background-color: rgba(0,0,0,0.05);
+    }
+
+    .navbar_login {
+        display: none;
+        margin: 0;
+        padding: 40px 0 0 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_login li {
+        align-items: center;
+        padding: 7px 20px 7px 20px;
+        font-size: 18;
+    }
+
+    .navbar_login li:nth-child(2){
+        padding: 7px 0px 7px 0px;
+    }
+
+    .navbar_login li:hover {
+        background-color: rgba(0,0,0,0.05);
+    }
+    
+    .navbar_login li:nth-child(2):hover{
+        background-color: transparent;
+    }
+
+    .toggleBtn {
+        display: block;
+        z-index: 2;
+    }
+
+    .navbar_menu.active,
+    .navbar_login.active {
+        display: flex;
+    }
+
+    .board_wrap {
+        width: 95%;
+        min-width: 320px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .board_list .num,
+    .board_list .writer,
+    .board_list .count {
+        display: none;
+    }
+    
+    .board_list .date {
+        width: 40%;
+        letter-spacing: -0.5px;
+        font-size: 13px;
+    }
+
+    .board_list .top .date {
+        text-indent: 70px;
+    }
+
+    .board_list .date {
+        text-indent: 65px;
+    }
+
+    .board_list .title {
+        text-indent: 10px;
+    }
+
+    .board_list .top .title {
+        text-indent: 0;
+    }
+
+    .board_page a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .board_page a.bt {
+        padding-top: 7px;
+    }
+
+    .board_page a.num {
+        padding-top: 6px;
+    }
+
+    .board_view .info dl {
+        padding: 0;
+        width: 50%;
+    }
+
+    .board_view .info dl:nth-child(-n+2) {
+        margin-bottom: 5px;
+    }
+
+    .board_view .info dl::before {
+        display: none;
+    }
+
+    .board_view .info dl dt,
+    .board_view .info dl dd {
+        font-size: 1.2rem;
+    }
+
+    .board_write .title dt,
+    .board_write .info dt {
+        display: none;
+    }
+
+    .board_write .title dd,
+    .board_write .info dd {
+        width: 100%;
+    }
+
+    .board_write .info dl {
+        width: 49%;
+    }
+
+    .board_write .info dl:first-child {
+        margin-right: 2%;
+    }
+
+    
+
+    .board_write .title input[type="text"],
+    .board_write .info input[type="text"],
+    .board_write .info input[type="password"] {
+        width: 100%;
+    }    
+}

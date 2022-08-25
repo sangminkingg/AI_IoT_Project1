@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="/01/login.css">
+    <link rel="stylesheet" href="/05/css/css.css">
+    <script src="/01/main.js" defer></script>
+    
+    <style type="text/css">
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf');
+        }
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf');
+          unicode-range: U+AC00-D7A3;
+        }
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf');
+          unicode-range: U+0041-005A, U+0061-007A, U+0030-0039,U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        }
+      </style>
+</head>
+<body onload="init()">
+
+    <!-- log in -->
+    <div class="popup" id="pop1">
+        <h2>로그인</h2>
+        <form action="#">
+            <fieldset>
+                <input type="text" id="loginid" placeholder="아이디를 입력해 주세요.">
+                <input type="password" id="loginid" placeholder="비밀번호를 입력해 주세요.">
+                <button type="button" onclick="location.href='/05/mypage.html'">Log in</button>
+                <ul>
+                    <li>아이디/비밀번호찾기</li>
+                    <li><a href="#pop2_0">회원가입</a></li>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- 약관동의 -->
+    <div class="popup2_0" id="pop2_0">
+        <h2>약관동의</h2>
+        <form action="/" method="POST" id="form__wrap">
+            <div class="terms__check__all">
+                <input type="checkbox" name="checkAll" id="checkAll">&nbsp;&nbsp;이용약관, 개인정보 수집 및 이용에 모두 동의합니다.
+            </div>
+            <div class="input__check">
+                <input type="checkbox">&nbsp;&nbsp;이용약관 동의<span>(필수)</span>
+            </div>
+            <div class="terms__content">
+                여러분을 환영합니다.<br>
+                <br>
+                FLEX 서비스 및 제품(이하 ‘서비스’)을 이용해주셔서<br>
+                감사합니다. 본 약관은 다양한 서비스의 이용과 관련하여<br>
+                FLEX 서비스를 제공하는 FLEX 주식회사(이하 FLEX)와<br>
+                이를 이용하는 서비스 회원(이하 ‘회원’), 또는 비회원과의 관계<br>
+                를 설명하며, 아울러 여러분의 서비스 이용에 도움이 될 수 있는<br>
+                유익한 정보를 포함하고 있습니다. 
+                <br>
+                <br>서비스를 이용하시거나 FLEX 서비스 회원으로 가입하실 경우, 여러분은 본
+                약관 및 관련 운영 정책을 확인하거나 동의하게<br>되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기
+                바랍니다.
+            </div>
+            <div class="input__check">
+                <input type="checkbox">&nbsp;&nbsp;개인정보 수집 및 이용 동의<span>(필수)</span>
+            </div>
+            <div class="terms__content">
+                개인정보보호법에 따라 회원가입 신청하시는 분께 수집하는<br>
+                개인정보의 항목, 개인정보의 수집 및
+                이용목적, 개인정보의 보유<br>및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을<br> 안내 드리오니
+                자세히 읽은 후 동의하여 주시기 바랍니다.
+                <br>
+                <br>1. 수집하는 개인정보 이용자는 회원가입을 하지 않아도<br>
+                정보 검색 등 대부분의 네이버 서비스를 회원과 
+                동일하게 이용할<br>
+                수 있습니다. 이용자가 메일, 캘린더, 카페,
+                블로그 등과 같이<br> 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, FLEX는 서비스 이용을
+                위해 필요한 최소한의 개인정보를<br>수집합니다.
+                </div>
+            <div id="btnnnn">
+                <button type="button" onclick="location.href='#pop2'">Sign in</button>
+                <button type="button" onclick="location.href='/01/main.html'">취소</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- sign in -->
+    <div class="popup2" id="pop2">
+        <h2>회원가입</h2>
+        <form action="#">
+            <fieldset>
+                <div class="input1">
+                    <input type="text" id="loginid" placeholder="아이디(ID)">
+                    <input type="text" id="loginid" placeholder="이메일(E-mail)">
+                    <input type="password" id="loginid" placeholder="비밀번호">
+                    <input type="password" id="loginid" placeholder="비밀번호 확인">
+                </div>
+                <div class="input2">
+                    <label for="loginid">이름</label>
+                    <input type="text" id="loginid" placeholder="이름을 입력하세요.">
+                </div>
+                <div id="input_text">성별</div>
+                <div class="input3">
+                    <div class="gender1">
+                        <label for="loginid">남</label>
+                        <input type="checkbox">
+                    </div>
+                    <div class="gender2">
+                        <label for="loginid">여</label>
+                        <input type="checkbox">
+                    </div>
+                    
+                </div>
+                <button type="button" onclick="location.href='/05/mypage.html'">Sign in</button>
+                <button type="submit">취소</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <header>
+        <div class="wrap1">
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <a href="/01/main.html">Planterium</a>
+                </div>
+                <div class="navbar_menu">
+                    <ul class="dep1">
+                        <li><a href="/02/menu1.html">About us</a></li>
+                        <li><a href="/03/menu2.html">Project</a></li>
+                        <li><a href="/04-1/notice.html">Notice</a></li>
+                        <li><a href="/04-2/qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="navbar_login">
+                    <ul>
+                        <li><a href="/05/mypage.html">My Page</a></li>
+                        <li>/</li>
+                        <li><a href="#pop1">Log in</a></li>
+                    </ul>
+                </div>
+                <div class="toggleBtn">
+                    <a href="#"><img src="/01/img/btn2.png"></a>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <div class="status">
+            <div>
+                <p><strong>임현정</strong>님, 안녕하세요!</p>
+            </div>
+            <div class="my_status">
+                <h2>My Garden <button type="button" class="btn_img" id="btn_png" onclick="location.href='#search_1'"><img src="/01/img/pngwing.com.png" alt=""></button></h2>
+                <hr width="100%" color="#333" size="0.01">
+                <table id="rwd-table">
+                    <tbody>
+                    <tr>
+                        <td id="t_left">온도</td>
+                        <td id="t_right">22 ℃</td>
+                    </tr>
+                    <tr>
+                        <td id="t_left">습도</td>
+                        <td id="t_right">34 %</td>
+                    </tr>
+                    <tr>
+                        <td id="t_left">조도 (lx)</td>
+                        <td id="t_right">45 lx</td>
+                    </tr>
+                    <tr>
+                        <td id="t_left">토양 습도</td>
+                        <td id="t_right">84 %</td>
+                    </tr>
+                    <tr>
+                        <td id="t_left">급수 탱크</td>
+                        <td id="t_right">93 %</td>
+                    </tr>
+                    <tr>
+                        <td id="t_left">배수 탱크</td>
+                        <td id="t_right">23 %</td>
+                    </tr>
+                    </tbody>
+              </table>
+              <button type="button" id="cctv">실시간 모니터링</button>
+            </div>
+            <hr width="70%" opacity="20%">
+        </div>
+        
+        <div class="setting">
+            <h2>설정</h2>
+            <button type="button" id="setBtn" onclick="f_clickFunc()">Auto Care</button>
+            <script>
+                function f_clickFunc(){
+                    document.querySelector('.switch')
+                }
+                // 여기!!!!!!!!!!!!!1
+
+
+
+
+            </script>
+            <form id="formTag" name=frmname action=act.php>
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>물 주기</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher1">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+                
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>히터</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher2">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>환풍기</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher3">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+                
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>생장등</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher4">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>LED무드등</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher5">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+                <div class="switchBox">
+                    <div class="plist">
+                        <P>스피커</P>
+                    </div>
+                    <span class="switch">
+                        <input type="checkbox" id="switcher6">
+                        <label for="switcher"></label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <div class="search" id="search_1">
+       
+        <form action="#">
+            <h2>Search</h2>
+            <fieldset>
+                <input type="text" id="search" placeholder="식물의 이름을 입력해 주세요.">
+                <button type="button" onclick="location.href='#search_2'">Search</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="search_2" id="search_2">
+        <form id="searchform" action="#">
+            <h2>Information</h2>
+            <table id="info-table">
+                <tbody>
+                <tr>
+                    <td id="table_left">이름</td>
+                    <td id="table_right">금목서</td>
+                </tr>
+                <tr>
+                    <td id="table_left">분류</td>
+                    <td id="table_right">물푸레나무과</td>
+                </tr>
+                <tr>
+                    <td id="table_left">적정 온도(℃)</td>
+                    <td id="table_right">18 ℃</td>
+                </tr>
+                <tr>
+                    <td id="table_left">적정 습도(%)</td>
+                    <td id="table_right">55 %</td>
+                </tr>
+                <tr>
+                    <td id="table_left">적정 조도(lx)</td>
+                    <td id="table_right">50 lx</td>
+                </tr>
+                <tr>
+                    <td id="table_left">적정 관수량</td>
+                    <td id="table_right">항상 흙을 촉촉하게 유지</td>
+                    <!-- 
+                        1 <= 항상 흙을 촉촉하게 유지
+                        2 <= 흙을 촉촉하게 유지
+                        3 <= 토양 표면이 말랐을 때, 충분히 관수
+                        4 <= 흙의 대부분이 말랐을 때, 충분히 관수
+                        5 <= 한 달에 한 번 관수
+                        6 <= 한 달에 두 번 관수 
+                    -->
+                </tr>
+                </tbody>
+            </table>
+            <button type="submit" id="autocareBtn">Auto Care</button>
+        </form>
+        
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_con">
+            <div class="row">
+                <div class="footer_menu">
+                    <ul id="footer_text">
+                        <li><a href="/02/menu1.html">About Us</a></li>
+                        <li><a href="/03/menu2.html">Project</a></li>
+                        <li><a href="/04-1/notice.html">Notice</a></li>
+                        <li><a href="/04-2/qna.html">Q&A</a>
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright ⓒ
+                        <a href="main.html"><strong>FLEX</strong></a>
+                        &nbsp;All Right Reserved.
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

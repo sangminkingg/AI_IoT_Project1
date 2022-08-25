@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    font-family: polyfont;
+}
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/*navbar*/
+
+
+.navbar {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px 10px 40px;
+}
+
+.navbar_logo {
+    font-size: 250%;
+    letter-spacing: -1px;
+    z-index: 5;
+}
+
+.navbar_logo:hover {
+    color: lightgrey;
+}
+
+.navbar_menu {
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.navbar_menu .dep1 li{
+    vertical-align: top;
+    margin-left: 80px;
+    float: left;
+    font-size: 22px;
+    text-align: center;
+}
+
+.navbar_menu .dep1 li:hover {
+    color: lightgray;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.navbar_menu .dep1 li:active > .dropdown {
+    display: block;
+}
+
+.navbar_login li:active {
+    display: flex;
+    color: lightgray;
+}
+
+.navbar_login {
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.navbar_login li {
+    margin-left: 18px;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+}
+
+.toggleBtn {
+    display: none;
+    position: absolute;
+    top: 43px;
+    right: 30px;
+}
+
+/* footer */
+footer {
+    background:rgba(0,0,0,0.3);
+}
+
+.footer {
+    text-align: center;
+    padding: 5px 50px 25px 50px;
+}
+.footer li {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+    padding: 20px 7px 0 10px;
+    margin: 0 35px;
+    white-space:nowrap;
+}
+
+.footer li:hover {
+    color: lightgray;
+}
+
+.footer address {
+    color: #333;
+    padding-top: 20px ;
+    font-size: 11px;
+}
+
+
+main {
+    height:2250px;
+}
+
+.status {
+    padding: 150px 0 60px 0 ;
+    display: flex;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.status p {
+    font-size: 30px;
+    padding: 0px 0 0 0;
+}
+
+.status p strong{
+    font-size: 50px;
+    margin: 5px;
+}
+
+.my_status {
+    text-align: center;
+}
+
+.my_status h2{
+    font-size: 35px;
+    padding: 50px;
+    margin: 80px 0 10px 0;
+}
+
+.btn_img {
+    padding: 5px;
+    border: 0px;
+}
+
+.btn_img:focus {
+    outline: none;
+}
+
+.btn_img:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn_img img{
+    width: 15px;
+}
+
+
+.my_status table{
+    width: 350px;
+    font-size: 16px;
+    line-height: 80px;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.my_status #t_left {
+    text-align: left;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.my_status #t_right {
+    color: #305A05;
+    font-size: 150%;
+    text-align: right;
+    font-weight: 400;
+}
+
+#cctv {
+    padding: 0;
+    margin: 0 0 120px 0;
+    background-color: #fff ;
+    font-size: 16px;
+    color: #305A05;
+    border-radius: 8px;
+    border: 1.5px solid #305A05;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+}
+
+#cctv:hover {
+    background-color: #305A05 ;
+    color: white;
+}
+
+hr{
+    text-align: center;
+    margin: auto;
+    opacity: 100%;
+}
+
+/* 스위치 */
+
+#setBtn {
+    padding: 0;
+    margin: 0 0 60px 0;
+    background-color: #fff ;
+    font-size: 18px;
+    color: #305A05;
+    border-radius: 8px;
+    font-weight: 600;
+    border-style: none;
+    outline: 1.5px solid #305A05;
+    width: 200px;
+    height: 50px;
+}
+
+#setBtn:hover {
+    color: #fff ;
+    background-color: #305A05;
+}
+
+.setting {
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.setting h2{
+    font-size: 35px;
+    padding: 0 0 100px 0;
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.plist p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.switch {
+    box-sizing: border-box;
+    padding: 3px 0 0 0;
+    position: relative;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+}
+
+.switch input {
+    appearance: none;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #fff;
+    outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+}
+
+.switch input::before {
+    content: "ON";
+    left: 20px;
+}
+
+.switch input::after {
+    content: "OFF";
+    right: 20px;
+}
+
+
+
+.switch label {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 4px;
+    border-radius: 20px;
+}
+
+.switch input {
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
+.switch input:checked {
+    background-color: #305A05;
+}
+.switch input:checked::after,
+.switch input:checked::before {
+    color: #305A05;
+    transition: color 0.5s;
+}
+
+.switch input:checked+label {
+    left: 10px;
+    right: 100px;
+    background-color: #fff;
+    transition: left 0.5s, right 0.4s 0.2s;
+}
+
+
+
+
+
+.switch input:not(:checked) {
+    background:rgba(111,111,111,0.2);
+    outline: 1.5px solid #6F6F6F;
+    transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before {
+    color: #333;
+    transition: color 0.5s;
+}
+
+.switch input:not(:checked)::after {
+    color: #6F6F6F;
+    transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked) +label {
+    left: 100px;
+    right: 10px;
+    background: white;
+    transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}
+
+
+
+
+
+
+
+.switchBox {
+    display: flex;
+    margin: 30px 0;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switchBox:last-child {
+    margin-bottom: 60px;
+}
+
+
