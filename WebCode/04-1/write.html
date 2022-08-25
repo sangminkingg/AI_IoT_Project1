@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write</title>
+    <link rel="stylesheet" href="/04-1/css/css.css">
+    <link rel="stylesheet" href="/01/login.css">
+    <script src="/01/main.js" defer></script>
+    <style type="text/css">
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf');
+        }
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Noto_Sans_KR/NotoSansKR-Thin.otf');
+          unicode-range: U+AC00-D7A3;
+        }
+        @font-face {
+          font-family: polyfont;
+          src: url('/01/fonts/Nanum_Myeongjo/NanumMyeongjo-Regular.ttf');
+          unicode-range: U+0041-005A, U+0061-007A, U+0030-0039,U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="wrap1">
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <a href="/01/main.html">Planterium</a>
+                </div>
+                <div class="navbar_menu">
+                    <ul class="dep1">
+                        <li><a href="/02/menu1.html">About us</a></li>
+                        <li><a href="/03/menu2.html">Project</a></li>
+                        <li><a href="/04-1/notice.html">Notice</a></li>
+                        <li><a href="/04-2/qna.html">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="navbar_login">
+                    <ul>
+                        <li><a href="/05/mypage.html">My Page</a></li>
+                        <li>/</li>
+                        <li><a href="#pop1">Log in</a></li>
+                    </ul>
+                </div>
+                <div class="toggleBtn">
+                    <a href="#"><img src="/01/img/btn2.png"></a>
+                </div>
+            </nav>
+    </header>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>Notice</strong>
+            <p>- 공지사항</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" placeholder="제목을 입력하세요."></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>작성자</dt>
+                        <dd><input type="text" placeholder="이름을 입력하세요."></dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호</dt>
+                        <dd><input type="password" placeholder="비밀번호를 입력하세요."></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea placeholder="내용을 입력하세요."></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="notice.html" class="on">등록</a>
+                <button type="button" onclick="location.href='/01/main.html'">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_con">
+            <div class="row">
+                <div class="footer_menu">
+                    <ul id="footer_text">
+                        <li><a href="/02/menu1.html">About Us</a></li>
+                        <li><a href="/03/menu2.html">Project</a></li>
+                        <li><a href="/04-1/notice.html">Notice</a></li>
+                        <li><a href="/04-2/qna.html">Q&A</a>
+                        </li>
+                    </ul>
+                    <address>
+                        Copyright ⓒ
+                        <a href="main.html"><strong>FLEX</strong></a>
+                        &nbsp;All Right Reserved.
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
